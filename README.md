@@ -18,7 +18,7 @@ INSTALACION
   2. (Opcional) tambien 'sim_drive' para marchas/HUD/direccion de volante.
 
 USO
-  1. Enciende el G923 y su software (G HUB) + tu x360ce (mando Xbox virtual).
+  1. Enciende el G923 y su software (G HUB).
   2. Ejecuta  SimFfb.exe
   3. Entra a FiveM, sube a un coche -> deberia decir "FiveM conectado"
      y el volante cobra vida (autocentrado, golpes, vibracion...).
