@@ -19,9 +19,7 @@ INSTALACION
 
 USO
   1. Enciende el G923 y su software (G HUB) + tu x360ce (mando Xbox virtual).
-  2. Ejecuta  SimFfb.exe   (doble clic). Debe decir:
-        Usando dispositivo [0]: ... G923 ...
-        Escuchando telemetria en ws://127.0.0.1:8767
+  2. Ejecuta  SimFfb.exe
   3. Entra a FiveM, sube a un coche -> deberia decir "FiveM conectado"
      y el volante cobra vida (autocentrado, golpes, vibracion...).
 
