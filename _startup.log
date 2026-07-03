@@ -1,0 +1,6 @@
+== SIM FFB + EMULADOR ==  (Ctrl+C para salir)
+  [0] Logitech G HUB G923 Racing Wheel for XBox One and PC (USB)
+Volante: Logitech G HUB G923 Racing Wheel for XBox One and PC (USB)
+Mando Xbox 360 virtual conectado.
+Mando virtual creado + escuchando FFB en ws://127.0.0.1:8767
+=> Entra a un coche en FiveM. El volante conduce y el FFB actua.
