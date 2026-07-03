@@ -34,7 +34,7 @@ NOTAS HONESTAS
   - Es FFB SINTETICO (calculado con telemetria aproximada). No es Assetto,
     pero da sensacion util: centrado, golpes, curbs, perdida de agarre.
   - Si al ejecutar SimFfb.exe el volante deja de girar en el juego, prueba
-    el orden de arranque (primero G HUB/x360ce, luego SimFfb) - el FFB usa
+    el orden de arranque (primero G HUB, luego SimFfb) - el FFB usa
     acceso exclusivo del volante.
   - Force Feedback REAL nativo en GTA V solo existe con el mod .asi de ikt,
     que FiveM banea. Esta es la unica via segura.
