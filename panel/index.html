@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sim FFB · G923</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3.2a6.8 6.8 0 016.6 5.2H14a2 2 0 00-4 0H5.4A6.8 6.8 0 0112 5.2zM6.6 13.4H10a2 2 0 001 1.7v3.5a6.8 6.8 0 01-4.4-5.2zm6.4 5.2v-3.5a2 2 0 001-1.7h3.4a6.8 6.8 0 01-4.4 5.2z"/></svg></div>
+      <div>
+        <div class="title">SIM&nbsp;FFB</div>
+        <div class="subtitle">Emulador + Force Feedback</div>
+      </div>
+    </div>
+    <div class="pills">
+      <div class="pill" id="pillWheel"><span class="dot"></span><span id="wheelTxt">Volante</span></div>
+      <div class="pill" id="pillFive"><span class="dot"></span><span id="fiveTxt">FiveM</span></div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Columna dispositivo -->
+    <section class="device">
+      <div class="wheelWrap">
+        <svg class="wheelSvg" id="wheelSvg" viewBox="0 0 220 220">
+          <circle cx="110" cy="110" r="96" class="rim"/>
+          <circle cx="110" cy="110" r="96" class="rimGlow"/>
+          <rect x="103" y="8" width="14" height="26" rx="5" class="topmark"/>
+          <g class="spokes">
+            <rect x="104" y="110" width="12" height="92" rx="6"/>
+            <rect x="18" y="104" width="92" height="12" rx="6"/>
+            <rect x="110" y="104" width="92" height="12" rx="6"/>
+          </g>
+          <circle cx="110" cy="110" r="34" class="hub"/>
+          <circle cx="110" cy="110" r="34" class="hubRing"/>
+          <circle cx="110" cy="110" r="7" class="hubDot"/>
+        </svg>
+        <div class="steerDeg" id="steerVal">0°</div>
+        <div class="steerCap">DIRECCIÓN</div>
+      </div>
+
+      <div class="pedals">
+        <div class="pedal"><div class="ptrack"><div class="pfill clu" id="cluFill"></div></div><div class="plbl">EMBRAGUE</div><div class="pval" id="cluVal">0%</div></div>
+        <div class="pedal"><div class="ptrack"><div class="pfill brk" id="brkFill"></div></div><div class="plbl">FRENO</div><div class="pval" id="brkVal">0%</div></div>
+        <div class="pedal"><div class="ptrack"><div class="pfill thr" id="thrFill"></div></div><div class="plbl">GAS</div><div class="pval" id="thrVal">0%</div></div>
+      </div>
+
+      <div class="btnsBlock">
+        <div class="secLbl">BOTONES Y CRUCETA <span class="hintmini">se encienden al pulsar</span></div>
+        <div class="padRow">
+          <div class="dpad">
+            <div class="dc up" id="dp_up">▲</div>
+            <div class="dc lf" id="dp_lf">◀</div>
+            <div class="dc ct"></div>
+            <div class="dc rt" id="dp_rt">▶</div>
+            <div class="dc dn" id="dp_dn">▼</div>
+          </div>
+          <div class="btnGrid" id="btnGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Columna ajustes -->
+    <section class="settings">
+      <div class="secLbl">FORCE FEEDBACK</div>
+      <div class="sliders" id="sliders"></div>
+      <label class="switchRow">
+        <span>Invertir sentido del FFB</span>
+        <span class="switch"><input type="checkbox" id="invffb"><span class="slider"></span></span>
+      </label>
+
+      <div class="divider"></div>
+
+      <div class="secLbl">MAPEO DEL VOLANTE <span class="hintmini">si un pedal va mal, cámbialo</span></div>
+      <div id="mapRows"></div>
+      <div class="paddleRow">
+        <span>Levas · subir</span><input type="number" id="pup" min="0" max="31" class="num">
+        <span>bajar</span><input type="number" id="pdn" min="0" max="31" class="num">
+      </div>
+
+      <div class="foot">
+        <span class="hintmini">Los cambios se guardan solos. Deja la app abierta al jugar.</span>
+        <button id="quit" class="btnQuit">Salir</button>
+      </div>
+    </section>
+
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
